@@ -1,0 +1,183 @@
+/*
+font-family: 'Permanent Marker', cursive;
+font-family: 'Staatliches', cursive;
+font-family: 'Comfortaa', cursive;
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Permanent+Marker|Staatliches');
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+
+}
+
+.page-content {
+    background-image: url(../img/cork.jpg)
+}
+
+}
+
+h2 {
+    color: #ff4d94;
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 3%;
+    grid-row-gap: 6%;
+    padding: 10%;
+
+}
+
+#takePic {
+    background-color: white;
+    color: black;
+    font-family: 'Permanent Marker', cursive;
+    filter: drop-shadow( 0.75rem  4px 6px black);
+    border-radius: 20px;
+    margin-top: 7px;
+
+}
+
+.ios .button.button-fill {
+    background: #80dfff;
+}
+
+
+.collection-header {
+    margin-top: 25px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    width: 85%;
+    transform: rotate(2.5deg)
+}
+
+.foot {
+    background-color: white;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    z-index: 15;
+    width: 90%;
+    transform: rotate(-2.5deg);
+    margin-bottom: 10px;
+}
+
+.foot h2 {
+    font-size: 125%;
+}
+
+.picture {
+    min-height: 220px;
+    margin: 0;
+    position: relative;
+    margin-bottom: 10%;
+    filter: drop-shadow( 0.75rem  4px 6px black);
+}
+
+.pic {
+    position: absolute;
+    width: 95vw;
+    height: 100vw;
+    z-index: 1;
+    /*    transform: rotate(90deg);*/
+    object-fit: cover;
+    transform: rotate(-90deg);
+    filter: drop-shadow( 0.75rem  4px 6px black);
+
+}
+
+.border {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+
+}
+
+.fade {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    z-index: 2;
+    background-color: lightgrey;
+    animation-name: time;
+    animation-duration: 120s;
+    animation-fill-mode: forwards;
+
+
+}
+
+.write {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    background-color: blue;
+    color: blue;
+    z-index: 10;
+    appearance: true;
+}
+
+input[type=text] {
+    text-align: center;
+    color: black;
+    font-size: 250%;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.text {}
+
+@keyframes time {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/*
+
+body {
+     background-color: #fff;
+     -webkit-animation: random 5s infinite;
+     animation: random 5s infinite;
+}
+
+
+@keyframes mymove{
+    form{background-color: #38dc58; }
+    to{background-color: #9b40f1;}
+}
+YOU CAN USE LIKE IT TOO :d
+
+div
+{
+  background:#debe94;
+  width:100px;
+  height:100px;
+  transition: all 0.3s ease-out;
+}
+.center
+{ 
+  margin:auto;
+  position:absolute;
+  top:0; bottom:0; left:0; right:0;
+}
+*/
+
+
+
+/*#80dfff*/
